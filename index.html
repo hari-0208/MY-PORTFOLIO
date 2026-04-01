@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hariharan | Frontend Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquery.css">
+</head>
+<body>
+
+    <!-- header tag -->
+    <nav id="header">
+        <div class="logo">Hariharan</div>
+        <div>
+            <ul class="links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+<!-- mediaquery-->
+
+<nav id="mobile">
+    <div class="logo">Hariharan</div>
+
+ <div class="mobile-menu">
+        <div class="mobile-icon" onclick="toggleMenu()">
+                 <span></span>
+                 <span></span>
+                 <span></span>
+        </div>
+    
+ 
+        <ul class="mobile-links">
+            <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+      
+ </div>  
+
+</nav>
+
+<!-- Profile -->
+
+<section id="home">
+    <div class="section-pic">
+        <img src="HARI.jpeg" alt="hari image">
+    </div>
+
+    <div class="section-text">
+        <p class="section-text-p1">Hello, I'm</p>
+        <h1 class="title">Hariharan S</h1>
+        <p class="section-text-p2">Frontend Developer</p>
+
+        <div class="btn-container">
+            <button class="btn btn-color-2" target="_blank"
+            onclick="window.open('HARIHARAN_S_RESUME.pdf')">
+            View CV</button>
+
+              <button class="btn btn-color-1" 
+            onclick="location.href='#contact'">
+            Contact</button>
+        </div>
+
+        <div class="social-container">
+            <img src="linkedin.png" alt="linkedIn" class="icon" 
+            onclick="location.href='https://linkedin.com/in/thehariharan02'">
+
+             <img src="github.png" alt="github" class="icon" 
+            onclick="location.href='https://github.com/hari-0208'">
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <h1 class="title">About Me</h1>
+        
+
+    <div class="about-details-container">
+        <div class="about-container">
+            <div class="details-container">
+                <img src="education.png" 
+                alt="education" 
+                class="icon">
+                <h3>Education</h3>
+                <p>B.Sc Computer science </p>
+            </div>
+
+        </div>
+        <div class="text-container">
+           Hi! I’m Hariharan S, a beginner frontend developer from Tirunelveli, Tamil Nadu.
+I am learning HTML, CSS, JavaScript, and React.js, and I enjoy building simple web pages and small interactive apps.
+I am motivated to improve my skills, work on projects, and grow as a developer in the IT industry.
+        </div>
+    </div>
+
+</section>
+
+<section id="skills">
+    <h1 class="title">Skills</h1>
+     <div class="skills-grid">
+    <div class="skill">HTML5</div>
+    <div class="skill">CSS3</div>
+    <div class="skill">JavaScript (ES6+)</div>
+    <div class="skill">React.js</div>
+    <div class="skill">Responsive Design</div>
+    <div class="skill">Git & GitHub</div>
+    <div class="skill">Node.js</div>
+    <div class="skill">MySQL</div>
+  </div>
+</section>
+
+<section id="projects">
+     <h1 class="title">Projects</h1>
+   <div class="slider-container">
+    <div class="slider">
+      <div class="slide">
+          <a href="https://hari-0208.github.io/LOGIN-PAGE/" target="_blank">
+        <img src="loginpage.png" loading="lazy" alt="Login-Page">
+         <h2 class="project-title">Login Page</h2>
+        </a>
+      </div>
+      <div class="slide">
+        <a href="https://hari-0208.github.io/TO-DO-LIST/" target="_blank">
+        <img src="todolist.png"  alt="TO-DO-LIST">
+         <h2 class="project-title">To-Do List</h2>
+        </a>
+      </div>
+      <div class="slide">
+         <a href="https://hari-0208.github.io/Book-Management-Application/" target="_blank">
+        <img src="book app.png" loading="lazy" alt="book-management">
+         <h2 class="project-title">Book-Management-Application</h2>
+        </a>
+      </div>
+    </div>
+
+    <button class="slider-btn prev">&#10094;</button>
+    <button class="slider-btn next">&#10095;</button>
+
+    <div class="dots-container"></div>
+  </div>
+
+
+
+</section>
+
+<section id="contact">
+  <h1 class="title">Contact</h1>
+
+  <div class="contact-form">
+  <a  href="mailto:hariharans@gmail.com" class="btn" >
+    Send Email
+  </a>
+</div>
+  
+
+</section>
+
+<footer>
+    
+    <p>Copyright &#169; 2026 Hariharan. All Rights Reserved</p>
+</footer>
+</body>
+ <script src="script.js"></script>
+</html>
