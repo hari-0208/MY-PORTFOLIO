@@ -75,21 +75,21 @@
 #about {
   padding: 4rem 2rem;
   display: flex;
-  flex-direction: column; /* vertical stacking */
+  flex-direction: column;
   align-items: center;
-  justify-content: center; /* vertical centering */
+  justify-content: center; 
   text-align: center;
 }
 
 .about-details-container {
   display: flex;
-  flex-direction: column; /* stack text + cards */
+  flex-direction: column; 
   align-items: center;
   gap: 2rem;
 }
 
 .about-container {
-  flex-direction: column; /* cards stacked */
+  flex-direction: column; 
   width: 100%;
   max-width: 400px;
   margin: 0 auto;
@@ -114,14 +114,12 @@
   }
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .skills-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Mobile */
 @media (max-width: 600px) {
   .contact-info-upper-container {
     width: 90%;
