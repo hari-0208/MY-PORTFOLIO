@@ -323,17 +323,17 @@ section {
   background: #eee;
   border-radius: 12px;
   display: flex;
+  flex-direction: column; 
   justify-content: center;
   text-align: center;
   align-items: center;
-  font-weight: 500;
+  gap: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: 0.3s;
 }
 .details-container .icon{
   margin: 10px;
 }
-
 .details-container:hover {
   transform: translateY(-5px);
 }
@@ -383,12 +383,14 @@ section {
   padding: 20px;
   border-radius: 12px;
   display: flex;
+   flex-direction: column; 
   justify-content: center;
   text-align: center;
   align-items: center;
   font-weight: 500;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: 0.3s;
+  gap: 10px;
 }
 
 .skill:hover {
@@ -515,6 +517,7 @@ section {
   padding-bottom: 10%;
   text-decoration: underline;
   text-underline-offset: 1rem;
+   text-decoration-color: gray;
 }
 
 #contact .contact-form {
