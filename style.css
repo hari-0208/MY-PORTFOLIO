@@ -370,14 +370,14 @@ section {
   margin-bottom: 30px;
 }
 
-/* Grid */
+
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
 
-/* Skill Box */
+
 .skill {
   background: #eee;
   padding: 20px;
