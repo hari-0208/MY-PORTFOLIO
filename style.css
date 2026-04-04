@@ -401,10 +401,13 @@ section {
 
 #projects {
   min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #projects .title {
-  padding-bottom: 10%;
   text-decoration: underline;
   text-decoration-color: gray;
   text-underline-offset: 1rem;
