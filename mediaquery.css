@@ -68,9 +68,8 @@
   .section-text {
     width: 90%;
   }
-}
 
-/*  About Section */
+  /*  About Section */
 
 #about {
   padding: 4rem 2rem;
@@ -106,10 +105,11 @@
   margin: 0 auto;
   text-align: center;
 }
+}
 
 @media screen and (max-width: 800px) {
   .slider-container {
-    position: relative;
+    /* position: relative; */
     width: 100%;
   }
 }
