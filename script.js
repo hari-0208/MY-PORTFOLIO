@@ -1,20 +1,17 @@
 // mobile header section -- toggle menu open / close
 
-function toggleMenu(){
-    const mobile = document.querySelector('.mobile-links');
-    const icon = document.querySelector('.mobile-icon');
+function toggleMenu() {
+  const mobile = document.querySelector(".mobile-links");
+  const icon = document.querySelector(".mobile-icon");
 
-    // Toggle open class for menu and icon
+  // Toggle open class for menu and icon
 
-      mobile.classList.toggle("open");
-      icon.classList.toggle("open");
-  
-     
+  mobile.classList.toggle("open");
+  icon.classList.toggle("open");
 }
 //  Dom Loading it use for addEvent
 
 document.addEventListener("DOMContentLoaded", () => {
-
   // HTML create element mention for javascript
 
   const slider = document.querySelector(".slider");
@@ -22,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const prevBtn = document.querySelector(".prev");
   const nextBtn = document.querySelector(".next");
   const dotsContainer = document.querySelector(".dots-container");
-  
+
   // Slide position starting 0 value
 
   let currentSlide = 0;
@@ -34,7 +31,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // foreach method use it 0,1,2 == 3 index(pic)
 
   slide.forEach((_, index) => {
-
     //  variable create for Javascript
     const dot = document.createElement("div");
 
@@ -42,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     dot.classList.add("dot");
 
-    //  index active to dot is dark 
+    //  index active to dot is dark
 
     if (index === 0) dot.classList.add("active");
 
@@ -56,15 +52,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const dots = document.querySelectorAll(".dot");
 
-
-
   function updateDots() {
-
     // one to one index switch it
 
     dots.forEach((dot, index) => {
-
-      // active index toggle it 
+      // active index toggle it
 
       dot.classList.toggle("active", index === currentSlide);
     });
@@ -73,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function goToSlide(index) {
     currentSlide = index;
 
-    // select the index goto center 
+    // select the index goto center
     slider.style.transform = `translateX(-${currentSlide * 100}%)`;
     updateDots();
   }
@@ -93,5 +85,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // auto slide every 5 seconds
 
-  setInterval(nextSlide,5000);
+  setInterval(nextSlide, 5000);
 });
