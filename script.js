@@ -87,3 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   setInterval(nextSlide, 5000);
 });
+
+// footer
+
+document.getElementById("year").textContent = new Date().getFullYear();

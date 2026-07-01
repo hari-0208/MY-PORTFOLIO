@@ -8,7 +8,7 @@
 
 html {
   scroll-behavior: smooth;
-    /* height: 100%; */
+  /* height: 100%; */
 }
 
 body {
@@ -30,7 +30,6 @@ a,
 button {
   transition: all 0.3s ease-in-out;
 }
-
 
 /* HEADER */
 
@@ -218,14 +217,14 @@ section {
   z-index: 1;
 }
 
-.section-picture {
+.profile-picture {
   display: flex;
   height: 400px;
   width: 400px;
   margin: auto 0;
 }
 
-.section-picture img {
+.profile-picture img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -236,7 +235,7 @@ section {
   transition: 0.5s ease;
 }
 
-.section-picture img:hover {
+.profile-picture img:hover {
   transform: scale(1.05);
 }
 
@@ -245,26 +244,27 @@ section {
   font-weight: 600;
 }
 
-.section-text-p1 {
+.introduction {
   text-align: center;
 }
 
-.section-text-p2 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.title {
+.section-text .name {
   font-size: 50px;
   text-align: center;
   margin-bottom: 10px;
   margin-top: 20px;
 }
 
-#about .title,
-#skills .title,
-#projects .title,
-#contact .title {
+.role {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+ .title {
+   font-size: 50px;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 20px;
   text-decoration: underline;
   text-underline-offset: 1rem;
   text-decoration-color: gray;
@@ -349,18 +349,17 @@ section {
   transform: translateY(-12px) scale(1.03);
 }
 
-.details-container a{
-    text-decoration: none;
-    font-weight: bold;
-    color:  rgb(3, 3, 231);
+.details-container a {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(3, 3, 231);
 }
 
-.details-container a:hover{
-    text-decoration: none;
-    font-weight: bold;
-    color: navy;
+.details-container a:hover {
+  text-decoration: none;
+  font-weight: bold;
+  color: navy;
 }
-
 
 .text-container {
   max-width: 800px;
@@ -440,7 +439,8 @@ section {
   margin: 50px auto;
   overflow: hidden;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 3px solid black;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .slider {
@@ -548,7 +548,7 @@ section {
   text-decoration: none;
   background: white;
   border-radius: 20px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   transition: 0.3s ease;
 }
 
@@ -571,7 +571,7 @@ section {
 /* footer */
 
 footer {
-  margin-top: 0 auto;
+  /* margin-top: 0 auto; */
   padding: 1.5rem;
   background-color: #000;
   display: flex;

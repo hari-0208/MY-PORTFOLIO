@@ -47,19 +47,19 @@
     <!-- HOME PAGE -->
 
     <section id="home" class="delay-1">
-      <div class="section-picture">
+      <div class="profile-picture">
         <img src="./Images/HARI.jpeg" alt="Profile Img" />
       </div>
 
       <div class="section-text">
-        <p class="section-text-p1">Hello, I'm</p>
-        <h1 class="title">Hariharan S</h1>
-        <p class="section-text-p2">Frontend Developer</p>
+        <p class="introduction">Hello, I'm</p>
+        <h1 class="name">Hariharan S</h1>
+        <p class="role">Frontend Developer</p>
 
         <div class="btn-container">
           <button
             class="button btn-color-2"
-            onclick="window.open('HARIHARAN_S_RESUME.pdf', '_blank')"
+            onclick="window.open('HARIHARAN_S__RESUME.pdf', '_blank')"
           >
             View CV
           </button>
@@ -121,7 +121,7 @@
         <div class="text-container">
           Hi, I’m Hariharan S, a frontend developer from Tirunelveli, Tamil
           Nadu. I enjoy building responsive and interactive web pages using
-          HTML, CSS, JavaScript, and currently learning React. I’ve been
+          HTML, CSS, JavaScript, and  learning React. I’ve been
           focusing on improving my frontend skills by working on real projects
           and continuously learning new web technologies. My goal is to grow as
           a developer and contribute to building clean, user-friendly web
@@ -130,13 +130,16 @@
       </div>
     </section>
 
+    <!-- SKILLS PAGE -->
+
     <section id="skills" class="delay-3">
       <h1 class="title">Skills</h1>
 
       <div class="skills-grid">
         <div class="skill">
           <h3>Frontend</h3>
-          <p>HTML5 | CSS3 | JavaScript (ES6+)</p>
+          <p>HTML5 | CSS3 | JavaScript (ES6+)
+             | React (Basics) </p>
         </div>
 
         <div class="skill">
@@ -171,30 +174,9 @@
           <!-- TODO LIST -->
 
           <div class="slide">
-            <a href="https://hari-0208.github.io/TO-DO-LIST/" target="_blank">
-              <img src="./Images/todolist.png" alt="TO-DO-LIST" />
+            <a href="https://hari-0208.github.io/TO-DO-LIST-PROJECT/" target="_blank">
+              <img src="./Images/To-Do-List.png" alt="TO-DO-LIST" />
               <h2 class="project-title">To-Do List</h2>
-            </a>
-          </div>
-
-          <!-- LOGIN PAGE -->
-
-          <div class="slide">
-            <a href="https://hari-0208.github.io/LOGIN-PAGE/" target="_blank">
-              <img src="./Images/loginpage.png" alt="LOGIN-PAGE" />
-              <h2 class="project-title">Responsive Login Page</h2>
-            </a>
-          </div>
-
-          <!-- BOOK MANAGEMENT -->
-
-          <div class="slide">
-            <a
-              href="https://hari-0208.github.io/Book-Management-Application/"
-              target="_blank"
-            >
-              <img src="./Images/Book-App.png" alt="Book-App" />
-              <h2 class="project-title">Book Management Application</h2>
             </a>
           </div>
 
@@ -218,7 +200,20 @@
               target="_blank"
             >
               <img src="./Images/Currency Convertor.png" alt="Currency-Convertor" />
-              <h2 class="project-title">Currency-Convertor</h2>
+              <h2 class="project-title">Currency Convertor</h2>
+            </a>
+          </div>
+
+
+          <!-- Digital Clock -->
+
+            <div class="slide">
+            <a
+              href ="https://hari-0208.github.io/Digital-Clock/"
+              target="_blank"
+            >
+              <img src="./Images/Digital Clock.png" alt="Digital-Clock" />
+              <h2 class="project-title">Digital Clock</h2>
             </a>
           </div>
         </div>
@@ -229,6 +224,8 @@
         <div class="dots-container"></div>
       </div>
     </section>
+
+    <!-- CONTACT PAGE -->
 
     <section id="contact">
       <h1 class="title">Contact</h1>
@@ -263,8 +260,10 @@
       </div>
     </section>
 
+    <!-- FOOTER PAGE-->
+
     <footer>
-      <p>Copyright &#169; 2026 Hariharan. All Rights Reserved</p>
+      <p>Copyright &#169; <span id="year"></span> Hariharan. All Rights Reserved</p>
     </footer>
   </body>
   <script src="./script.js"></script>
