@@ -54,12 +54,6 @@ This portfolio website represents my frontend development journey and provides a
 
 🔗 https://hari-0208.github.io/MY-PORTFOLIO/
 
-## 📸 Preview
-
-<p align="center">
-  <img src="./assets/home-page.png" width="900"/>
-</p>
-
 ## 👨‍💻 Author
 
 **Hariharan S**
